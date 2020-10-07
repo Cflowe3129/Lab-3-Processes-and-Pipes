@@ -47,8 +47,7 @@ int main()
     { 
   
         close(fd1[0]);  // Close reading end of pipes 
-//         close(fd2[0]);
-  
+   
         // Write input string and close writing end of first 
         // pipe. 
         write(fd1[1], input_str, strlen(input_str)+1); 
